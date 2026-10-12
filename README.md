@@ -1,10 +1,10 @@
-# 🧮 Operações com Conjuntos em Python
+# Operações com Conjuntos em Python
 
 Programa de menu interativo que implementa operações com conjuntos **sem usar os operadores nativos do Python**, validando os resultados contra a solução nativa (`set`).
 
-Trabalho acadêmico da disciplina de [NOME DA DISCIPLINA] — [NOME DA FACULDADE].
+Trabalho acadêmico da disciplina de [Matemática para Computação] — [Fatec Osasco].
 
-## 📌 Objetivo
+## Objetivo
 
 Implementar manualmente (com laços `for` e condicionais `if`) as principais operações da teoria dos conjuntos e comparar cada resultado com a solução nativa da linguagem, garantindo o aprendizado dos conceitos.
 
@@ -23,7 +23,7 @@ Implementar manualmente (com laços `for` e condicionais `if`) as principais ope
 | Cardinalidade | \|A\| | `cardinalidade(A)` | `len(setA)` |
 | Complemento | ∁ᵁA | `complemento(A, U)` | `set(U) - setA` |
 
-## 🧠 Estratégia
+## Estratégia
 
 Todas as operações foram construídas usando **apenas**:
 
@@ -33,7 +33,7 @@ Todas as operações foram construídas usando **apenas**:
 
 Nenhum operador nativo de conjunto (`|`, `&`, `-`, `^`, `in`, `issubset`, etc.) foi usado na implementação manual.
 
-## 🚀 Como Executar
+## Como Executar
 
 ### Pré-requisitos
 - Python 3.8 ou superior
@@ -51,7 +51,7 @@ cd operacoes-conjuntos
 python conjuntos.py
 ```
 
-## 🖥️ Como Usar
+## Como Usar
 
 1. Ao iniciar, digite os elementos dos conjuntos **A** e **B** separados por espaço.
 2. Para conjunto vazio, apenas aperte **Enter**.
@@ -76,7 +76,7 @@ Escolha: 1
   Iguais? ✅ SIM
 ```
 
-## 🧪 Casos de Teste
+## Casos de Teste
 
 Foram realizadas **três execuções** cobrindo cenários distintos:
 
@@ -102,7 +102,7 @@ Foram realizadas **três execuções** cobrindo cenários distintos:
 - **B:** `x y`
 - Interseção = vazio ✅
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 operacoes-conjuntos/
@@ -111,17 +111,17 @@ operacoes-conjuntos/
 └── .gitignore       # Arquivos ignorados pelo Git
 ```
 
-## 🛠️ Tecnologias
+## Tecnologias
 
 - **Python 3** — linguagem única do projeto
 - Nenhuma biblioteca externa necessária
 
-## 👤 Autor
+## Autor
 
-**[SEU NOME COMPLETO]**
-- GitHub: [@SEU-USUARIO](https://github.com/SEU-USUARIO)
-- E-mail: seu.email@exemplo.com
+**Fabiano Barbir**
+- GitHub: [@Fabiano-Dtreze](https://github.com/Fabiano-Dtreze)
+- E-mail: fabianobarbir@gmail.com
 
-## 📜 Licença
+## Licença
 
 Este projeto está sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
