@@ -1,69 +1,26 @@
-# ☕ Operações com Conjuntos em Java
+# Operações com Conjuntos em Python
 
-Versão em **Java** do programa de operações com conjuntos, desenvolvida como **aprofundamento pessoal** do trabalho original em Python.
+Programa que implementa operações com conjuntos **sem usar operadores nativos**, validando contra a solução nativa.
 
-> 📌 **Projeto principal (Python):** [operacoes-conjuntos](https://github.com/Fabiano-Dtreze/operacoes-conjuntos)
+Trabalho acadêmico — Matemática para Computação — Fatec Osasco.
 
-Trabalho acadêmico da disciplina de Matemática para Computação — Fatec Osasco.
+## Objetivo
 
----
+Implementar manualmente as operações da teoria dos conjuntos com laços e condicionais, comparando com a solução nativa.
 
-## 📌 Objetivo
+## Operações Implementadas
 
-Implementar em Java as principais operações da teoria dos conjuntos **sem usar os métodos nativos das coleções**, aplicando laços e condicionais, e comparar cada resultado com a solução nativa da linguagem.
-
----
-
-## ⚙️ Operações Implementadas
-
-| Operação | Notação | Implementação manual | Solução nativa (Java) |
-|---|---|---|---|
-| Pertinência | x ∈ A | `pertence(x, A)` | `A.contains(x)` |
-| União | A ∪ B | `uniao(A, B)` | `uniaoNativo(A, B)` |
-| Interseção | A ∩ B | `interseccao(A, B)` | `interseccaoNativo(A, B)` |
-| Diferença | A − B | `diferenca(A, B)` | `diferencaNativo(A, B)` |
-| Diferença Simétrica | A △ B | `diferencaSimetrica(A, B)` | `diferencaSimetricaNativo(A, B)` |
-| Inclusão | A ⊆ B | `estaContido(A, B)` | `B.containsAll(A)` |
-| Inclusão | A ⊇ B | `contem(A, B)` | `A.containsAll(B)` |
-| Cardinalidade | \|A\| | `cardinalidade(A)` | `A.stream().distinct().count()` |
-
----
-
-## 🧠 Decisões de Projeto
-
-**Por que replicar em Java?**
-Como aprofundamento pessoal, para compreender as diferenças entre tipagem dinâmica (Python) e estática (Java), e entre linguagens interpretadas e compiladas.
-
-**Diferenças em relação ao Python:**
-
-| Aspecto | Python | Java |
+| Operação | Manual | Nativo |
 |---|---|---|
-| Tipagem | Dinâmica | Estática |
-| Execução | Interpretada | Compilada |
-| Comparação de Strings | `==` | `.equals()` |
-| Estrutura | Script solto | Classe obrigatória |
-| Lista | `resultado = []` | `List<String> r = new ArrayList<>()` |
+| Pertinência | `pertence(x, A)` | `x in setA` |
+| União | `uniao(A, B)` | `setA \| setB` |
+| Interseção | `interseccao(A, B)` | `setA & setB` |
+| Diferença | `diferenca(A, B)` | `setA - setB` |
+| Dif. Simétrica | `diferenca_simetrica(A, B)` | `setA ^ setB` |
+| Inclusão | `esta_contido(A, B)` | `setA.issubset(setB)` |
+| Cardinalidade | `cardinalidade(A)` | `len(setA)` |
+| Complemento | `complemento(A, U)` | `set(U) - setA` |
 
-**Ponto crítico:** em Java, comparar Strings com `==` compara **referências de memória**, não conteúdo. Por isso, todas as comparações usam `.equals()`.
-
----
-
-## 🚀 Como Executar
-
-### Pré-requisitos
-- JDK 17 ou superior
-
-### Passos
+## Como Executar
 
 ```bash
-# Clone o repositório
-git clone https://github.com/Fabiano-Dtreze/operacoes-conjuntos-java.git
-
-# Entre na pasta
-cd operacoes-conjuntos-java
-
-# Compile
-javac Conjuntos.java
-
-# Execute
-java Conjuntos
